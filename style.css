@@ -1,0 +1,167 @@
+  * {
+    padding: 0;
+    margin: 0;
+}
+body{
+  font-family: "Rubik", sans-serif;
+}
+
+/* #map { height: 180px; } */
+
+
+@media (min-width: 375px) {
+  header{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background-image: url(/images/pattern-bg-mobile.png);
+    background-size: cover;
+    width: 100%;
+   
+    z-index: -2;
+  }
+  
+  .title_input{
+    height: 500px;
+  }
+  .title{
+    color: white;
+    padding: 30px 0 100px 0;
+    font-size: 35px;
+  }
+  .input_btn{
+    display: flex;
+    justify-content: center;
+  }
+  .search{
+    margin: 0;
+    padding: 0 10px;
+    width: 70%;
+    font-size: 15px;
+    height: 50px;
+    border: none;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+  .btn{
+    border: none;
+    width: 15%;
+    background: #000;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+   
+  }
+
+  .container{
+    display: flex;
+    position: absolute;
+    top: 70%;
+     left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    margin: auto;
+    width: 90%;
+    height:50%;
+    background-color: white;
+    border-radius: 15px;
+  }
+  
+  .info{
+    margin: 15px;
+    color: hsl(0, 0%, 59%);
+    text-transform: uppercase;
+  }
+  .info:first-child{
+    margin: 15px;
+  }
+  .styl{
+    
+    padding: 5px;
+    font-size: 25px;
+    color: #000;
+    
+  }
+ .btn:hover{
+  cursor: pointer;
+ }
+
+
+ @media (min-width: 1200px) {
+
+  header{
+    background-image: url(/images/pattern-bg-desktop.png);
+    height: 300px;
+  }
+
+  .title{
+    padding: 30px 0 50px 0;
+    
+  }
+
+  .search{
+    width: 30%; 
+    height: 50px;
+   
+  }
+
+  .btn{
+    width: 5%;
+  }
+
+
+   .container{
+     top: 32%;
+     width: 75%;
+     height:15%;
+    
+    }
+    .headings{
+      display: flex;
+     width: 100%;
+     justify-content: space-between;
+      
+    }
+  .info{
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+  .info{
+    padding: auto;
+  }
+  .paragraph{
+    text-align: start;
+    padding: 5px;
+  }
+  .styl{
+  text-align: start;
+  }
+ 
+  }
+
+
+
+  #map { 
+    position: absolute;
+       
+       
+        bottom: 0;
+        font-size: 500px;
+         width: 100%; 
+         height: 100%; 
+        z-index: -1;}
+}
+
+
+/* .leaflet-marker-icon{
+  background-image: url('../images/icon-location.svg')!important;
+
+  
+} */
+
+
+
+
+.leaflet-control-attribution  > a {
+  display: none !important;
+}
