@@ -33,16 +33,16 @@ body{
   .input_btn{
     display: flex;
     justify-content: center;
+    
   }
   .search{
     margin: 0;
     padding: 0 10px;
-    width: 70%;
+    width: 60%;
     font-size: 15px;
     height: 50px;
     border: none;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
+  
   }
   .btn{
     border: none;
@@ -50,7 +50,18 @@ body{
     background: #000;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-   
+  }
+
+  .my_ip_btn{
+    border: none;
+    width: 15%;
+    background: #000;
+    color: white;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
   }
 
   .container{
@@ -102,13 +113,24 @@ body{
   .search{
     width: 30%; 
     height: 50px;
+  
    
   }
 
   .btn{
     width: 5%;
   }
-
+  .my_ip_btn{
+    border: none;
+    width: 5%;
+    background: #000;
+    color: white;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
 
    .container{
      top: 32%;

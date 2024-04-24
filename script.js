@@ -4,6 +4,7 @@ const locationInfo = document.querySelector('.location');
 const timeInfo = document.querySelector('.timezone');
 const ispInfo = document.querySelector('.isp');
 const btn = document.querySelector('.btn');
+const btnIp = document.querySelector('.my_ip_btn');
 
 const API_LINK = 'https://geo.ipify.org/api/v2/';
 const API_KEY = 'at_N8gZcIJPKOl5r6Z23aXCWdzLgFbXK';
@@ -36,7 +37,17 @@ const getIp = () => {
         .catch(error => console.error('Błąd pobierania danych:', error));
 }
 
+const my_ip = () => {
+    fetch('https://api.ipify.org?format=json')
+        .then(response => response.json())
+        .then(data => {
+            input.value = data.ip;
+        })
+        .catch(error => {
+        });
+};
 
+btnIp.addEventListener('click', my_ip);
 btn.addEventListener('click', getIp);
 
 var map = L.map('map', { 
