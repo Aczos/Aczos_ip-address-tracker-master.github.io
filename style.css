@@ -63,6 +63,9 @@ body{
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
   }
+  .my_ip_btn:hover{
+    cursor: pointer;
+  }
 
   .container{
     display: flex;
